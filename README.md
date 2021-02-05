@@ -1,5 +1,8 @@
 
-![SHRAMEV](https://i.ibb.co/8mXj78j/v1-logo-blue-01.png  =170x)
+<a href="https://ibb.co/tH3bJCb"><img src="https://i.ibb.co/8mXj78j/v1-logo-blue-01.png" alt="SHRAMEV" align=left width=82 border="0"></a>
+
+# Auth Service
+
 
 ## Environment Variable
 
@@ -15,8 +18,7 @@
 ## Endpoints
 
  1. `/login` : post         
-        <pre>     
-                    
+                       
  * Request data : `{"emailAddress": "example@gmail.com","password":"Qwerty1@"}`
  * Success response : `OK 200`
  * Http error : 
@@ -26,11 +28,11 @@
 	 * `{"detail":"UNEXPECTED_ERROR"}, status_code : 500`
               
 
-      </pre>
+  
      
 
  2. `/signup` : post 
-         <pre>
+     
    * Request data :  `{"emailAddress":  "example@gmail.com","password":"Qwerty1@"}`
    *  Success response : `OK 200`
    *  Http error :
@@ -39,22 +41,18 @@
 	    * `{"detail":"USER_ALREADY_EXIST"}, status_code : 409`
                  
 
-   </pre>
 
  3. `/reset_password`  :  post
-        <pre> 
 * Request data: `Header : {"emailAddress": "example@gmail.com"}` **Only if service is exposed**
 * Success response : `OK 200`
 *  Http error : 
    * `{"detail":"UNEXPECTED_ERROR"}, status_code : 500`
-</pre> 
+
 
 4. `/renew_token` : post
-       <pre> 
 * Request data: `Header : {"emailAddress": "example@gmail.com", "userId":"123456789"}` **Only if service is exposed**
 *  Success response : `OK 200`
 *  Http error : `None`
-</pre>
 
 
 ## Port
