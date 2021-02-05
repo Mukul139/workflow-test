@@ -12,7 +12,7 @@
 4. `PASSWORD`
 5. `HASH_PRIVATE_KEY` : **Base64**
 6. `HASH_PUBLIC_KEY` : **Base64**
-7. `ENCRPT_PUBLIC_KEY` : **Base64**
+7. `ENCRPT_PRIVATE_KEY` : **Base64**
 8. `ENCRPT_PUBLIC_KEY` : **Base64**
 
 ## Endpoints
