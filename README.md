@@ -48,8 +48,14 @@
 *  Http error : 
    * `{"detail":"UNEXPECTED_ERROR"}, status_code : 500`
 
+4. `/email_verify`  :  post
+* Request data: `Header : {"emailAddress": "example@gmail.com"}` **Only if service is exposed**
+* Success response : `OK 200`
+*  Http error : 
+   * `{"detail":"UNEXPECTED_ERROR"}, status_code : 500`
 
-4. `/renew_token` : post
+
+5. `/renew_token` : post
 * Request data: `Header : {"emailAddress": "example@gmail.com", "userId":"123456789"}` **Only if service is exposed**
 *  Success response : `OK 200`
 *  Http error : `None`
